@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Text Color Example</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+    </style>
+    <script>
+        function changeTextColor() {
+            const paragraphs = document.querySelectorAll(".highlight");
+            paragraphs.forEach(paragraph => {
+                paragraph.classList.add("red-text");
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Change Text Color Example</h1>
+    <p id="paragraph1" class="highlight">This paragraph has the highlight class.</p>
+    <p id="paragraph2" class="highlight">This paragraph does not have the highlight class.</p>
+    <p id="paragraph3" class="highlight">This paragraph also has the highlight class.</p>
+    <button onclick="changeTextColor()">Change Text Color</button>
+</body>
+
+</html>

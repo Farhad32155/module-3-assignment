@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add CSS Class Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function addHighlightClass() {
+            const paragraph = document.getElementById("my-paragraph");
+            paragraph.classList.add("highlight");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Add CSS Class via DOM</h1>
+    <button onclick="addHighlightClass()">Add Highlight Class</button>
+    <p id="my-paragraph">This is a paragraph.</p>
+</body>
+
+</html>
